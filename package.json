@@ -1,0 +1,19 @@
+{
+  "name": "supersocket",
+  "version": "1.0.0",
+  "description": "chat con rooms",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines":{
+    "node": "8.9.4"
+  },
+  "author": "Alex Colombo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.17.1"
+  }
+}
