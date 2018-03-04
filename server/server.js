@@ -21,9 +21,10 @@ io.on('connection', (socket) => {
   // socket.broadcast.emit from admin, text new user joined
        socket.broadcast.emit('newMensaje', generateMessage('Admin', 'Un nuevo usuario se ha unido'))
 
-      socket.on('createMessage', (message)=>{
+      socket.on('createMessage', (message, cb)=>{
 
           io.emit('newMensaje', generateMessage(message.from, message.text))
+          cb('mensaje desde server....');
           // socket.broadcast.emit('newMensaje',  {
           //     desde : message.from,
           //     texto : message.text,

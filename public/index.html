@@ -6,10 +6,23 @@
   <title>Chat Rooms</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-  <script src="./js/socket.io.js"></script>
-  <script src="./js/main.js"></script>
+
 </head>
 <body>
   <h1>Hola Alex</h1>
+  <ol id='messages'></ol>
+
+
+
+  <form id="message-form">
+    <input name="user" type="text" placeholder="Quien eres?">
+    <input name="message" type="text" placeholder="Mensaje">
+    <button>Enviar</button>
+  </form>
+
+
+  <script src="./js/socket.io.js"></script>
+  <script src="./js/libs/jquery-3.3.1.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
